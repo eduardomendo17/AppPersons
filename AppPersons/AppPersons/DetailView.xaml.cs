@@ -27,6 +27,15 @@ namespace AppPersons
             InitializeComponent();
 
             this.Mainpage = mainPage;
+
+            // Cargar persona seleccionada
+            this.Person.ID = person.ID;
+            ImagePicture.Source = person.Picture;
+            EntryPicture.Text = person.Picture;
+            EntryFirstName.Text = person.FirstName;
+            EntryLastName.Text = person.LastName;
+            EntryAge.Text = person.Age.ToString();
+            EntryPhone.Text = person.Phone;
         }
 
         private void ButtonSave_Clicked(object sender, EventArgs e)
